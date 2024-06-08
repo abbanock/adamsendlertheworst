@@ -1,0 +1,51 @@
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.question {
+    font-size: 35px; 
+    font-family: font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+.wrapper .kitty {
+}
+.wrapper img {
+}
+.wrapper .answers {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+.wrapper .yes {
+    width: 100px;
+    height: 50px;
+    font-size: 28px;
+    line-height: 50px;
+    background-color: rgb(217, 176, 255);;
+    border: 1px solid rgb(217, 176, 255);
+    border-radius: 19px;
+    box-shadow: 0 0 28px;
+    transition: 1s;
+}
+.wrapper .no {
+    width: 100px;
+    height: 50px;
+    font-size: 28px;
+    line-height: 50px;
+    background-color: rgb(217, 176, 255);
+    border: 1px solid rgb(217, 176, 255);
+    border-radius: 14px;
+    box-shadow: 0 0 28px;
+    position: relative;
+    transition: 1s;
+}
+
+.yes:hover, .no:hover {
+    cursor: pointer;
+    background-color: rgb(100, 61, 136);
+}
+
+.happy, .angry {
+    display: none;
+}
