@@ -38,7 +38,6 @@
     border-radius: 14px;
     box-shadow: 0 0 28px;
     position: relative;
-    transition: 1s;
 }
 
 .yes:hover, .no:hover {
