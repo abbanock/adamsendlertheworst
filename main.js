@@ -1,6 +1,6 @@
 //import JSConfetti from 'js-confetti'
 
-
+//ДОСТАЕМ НОДЫ ИЗ DOM
 const container = document.querySelector('.container');
 const yesBtn = document.querySelector('.yes');
 const noBtn = document.querySelector('.no');
@@ -11,7 +11,7 @@ let noWidth = noBtn.style.width;
 let noHeight = noBtn.style.height;
 
 
-
+//УМЕНЬШЕНИЕ КНОПКИ ПО КЛИКУ
 noBtn.addEventListener('click', event => {
     kittyGif.style.display = "none";
     angryKitty.style.display = "inline";
@@ -20,6 +20,8 @@ noBtn.addEventListener('click', event => {
     let height = noBtn.offsetHeight;
     let fontSize = parseInt(window.getComputedStyle(noBtn).fontSize);
 
+    noBtn.classList.add('click')
+    
     width *= 0.9;
     height *= 0.9;
     fontSize *= 0.9;
@@ -32,8 +34,10 @@ noBtn.addEventListener('click', event => {
         noBtn.style.display = "none";
     }
 })
-
+//КОНФЕТТИ
 yesBtn.addEventListener('click', event => {
+    yesBtn.classList.add('click')
+
     const jsConfetti = new JSConfetti({
         container
     })
@@ -48,5 +52,7 @@ yesBtn.addEventListener('click', event => {
     kittyGif.style.display = "none";
     angryKitty.style.display = "none";
     happyKitty.style.display = "inline";
+    
+    
 
 })
